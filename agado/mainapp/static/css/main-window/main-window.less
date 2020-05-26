@@ -2,20 +2,115 @@
   height: 100vh;
   background: url("../img/bg.jpg") center;
   background-size: cover;
+
+  &__title-wrapper {
+    position: absolute;
+  }
+
   &__title {
     font-family: "Myriad Pro Regular", sans-serif;
     font-size: 88px;
     color: @white;
   }
+
   &__ticker {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin-top: 130px;
+    margin: 130px auto 0 auto;
+    opacity: 0;
+    width: fit-content;
     font-family: "Myriad Pro Regular", sans-serif;
     color: @white;
     font-size: 40px;
+    transition: all 0.5s;
+
+    &_first {
+      opacity: 1;
+    }
+  }
+
+  &__arrow {
+    height: 44px;
+    position: absolute;
+    bottom: 69px;
+  }
+
+  &__contacts-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+  }
+
+  &__contacts {
+    width: 100%;
+    margin-right: 65px;
+  }
+
+  &__contacts-ul {
+    margin-left: 0;
+    padding-left: 0;
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+    display: -webkit-flex;
+    webkit-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    text-align-last: justify;
+  }
+
+  &__contacts-li {
+    list-style-type: none;
+    display: inline-block;
+    display: -webkit-box;
+  }
+
+  &__social-link {
+
+  }
+
+  &__social-img {
+    height: 40px;
+  }
+
+  &__phone {
+    display: inline-block;
+    width: fit-content;
+    font-size: 24px;
+    color: @white;
+    margin-bottom: 0;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      margin-bottom: -8px;
+      margin-right: 5px;
+      width: 32px;
+      height: 32px;
+      background-size: contain;
+      background: url("../img/cont call.svg") no-repeat center;
+    }
+  }
+
+  &__mail {
+    display: inline-block;
+    width: fit-content;
+    font-size: 24px;
+    color: @white;
+    margin-bottom: 0;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      margin-bottom: -8px;
+      margin-right: 5px;
+      width: 32px;
+      height: 32px;
+      background-size: contain;
+      background: url("../img/cont email.svg") no-repeat center;
+    }
   }
 }

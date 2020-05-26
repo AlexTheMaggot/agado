@@ -16,6 +16,9 @@
   background: url("../img/bg.jpg") center;
   background-size: cover;
 }
+.main-window__title-wrapper {
+  position: absolute;
+}
 .main-window__title {
   font-family: "Myriad Pro Regular", sans-serif;
   font-size: 88px;
@@ -27,10 +30,84 @@
   bottom: 0;
   left: 0;
   right: 0;
-  margin-top: 130px;
+  margin: 130px auto 0 auto;
+  opacity: 0;
+  width: fit-content;
   font-family: "Myriad Pro Regular", sans-serif;
   color: #FFFFFF;
   font-size: 40px;
+  transition: all 0.5s;
+}
+.main-window__ticker_first {
+  opacity: 1;
+}
+.main-window__arrow {
+  height: 44px;
+  position: absolute;
+  bottom: 69px;
+}
+.main-window__contacts-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 35px;
+}
+.main-window__contacts {
+  width: 100%;
+  margin-right: 65px;
+}
+.main-window__contacts-ul {
+  margin-left: 0;
+  padding-left: 0;
+  display: -webkit-box;
+  -webkit-box-pack: justify;
+  display: -webkit-flex;
+  webkit-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  text-align-last: justify;
+}
+.main-window__contacts-li {
+  list-style-type: none;
+  display: inline-block;
+  display: -webkit-box;
+}
+.main-window__social-img {
+  height: 40px;
+}
+.main-window__phone {
+  display: inline-block;
+  width: fit-content;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.main-window__phone::before {
+  content: '';
+  display: inline-block;
+  margin-bottom: -8px;
+  margin-right: 5px;
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background: url("../img/cont call.svg") no-repeat center;
+}
+.main-window__mail {
+  display: inline-block;
+  width: fit-content;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.main-window__mail::before {
+  content: '';
+  display: inline-block;
+  margin-bottom: -8px;
+  margin-right: 5px;
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background: url("../img/cont email.svg") no-repeat center;
 }
 .logo {
   height: 52px;
