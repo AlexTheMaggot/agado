@@ -72,6 +72,9 @@
   color: #FFFFFF;
   margin-bottom: 0;
 }
+.main-window__phone:hover {
+  cursor: pointer;
+}
 .main-window__phone::before {
   content: '';
   display: inline-block;
@@ -89,6 +92,9 @@
   font-size: 24px;
   color: #FFFFFF;
   margin-bottom: 0;
+}
+.main-window__mail:hover {
+  cursor: pointer;
 }
 .main-window__mail::before {
   content: '';
