@@ -22,8 +22,26 @@ $(document).ready(function () {
             $('#ticker2').css('transform', 'translateX(400px)');
         }, 9500);
     }
+
     ticker();
     setInterval(function () {
         ticker();
     }, 9000)
+
+    $('.main-window__phone').on('click', function () {
+        let $tmp = $("<textarea>");
+        $("body").append($tmp);
+        $tmp.val($('.main-window__phone').text()).select();
+        document.execCommand("copy");
+        $tmp.remove();
+        alert('Номер добавлен в буффер обмена');
+    });
+    $('.main-window__mail').on('click', function () {
+        let $tmp = $("<textarea>");
+        $("body").append($tmp);
+        $tmp.val($('.main-window__mail').text()).select();
+        document.execCommand("copy");
+        $tmp.remove();
+        alert('E-mail добавлен в буффер обмена');
+    });
 });
