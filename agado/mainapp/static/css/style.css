@@ -89,6 +89,10 @@
 }
 .main-window__social-img {
   height: 40px;
+  transition: all 0.3s;
+}
+.main-window__social-img:hover {
+  transform: scale(1.05);
 }
 .main-window__phone {
   font-family: "Myriad Pro Regular", sans-serif;
