@@ -1,118 +1,139 @@
-.main-window {
+.mainwindow {
   height: 100vh;
   background: url("../img/bg.jpg") center;
   background-size: cover;
 
-  &__title-wrapper {
+  .title {
     position: absolute;
-  }
-
-  &__title {
-    margin-top: -6px;
-    font-family: "Myriad Pro Regular", sans-serif;
+    height: fit-content;
+    width: fit-content;
     font-size: 88px;
     color: @white;
-  }
-
-  &__ticker {
-    position: absolute;
+    margin: auto;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 129px auto 0 auto;
-    opacity: 0;
-    width: fit-content;
-    font-family: "Myriad Pro Regular", sans-serif;
-    color: @white;
-    font-size: 40px;
-    transition: all 0.7s;
+  }
 
-    &_first {
-      opacity: 1;
+  .ticker {
+    &__wrap {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 100px auto auto auto;
+      height: 100vh;
+      overflow-x: hidden;
+    }
+
+    &__text {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: fit-content;
+      height: fit-content;
+      color: @white;
+      font-size: 40px;
+      transition: all 0.7s;
+      opacity: 0;
+
+      &_first {
+        opacity: 1;
+      }
     }
   }
 
-  &__arrow {
-    height: 44px;
-    position: absolute;
-    bottom: 69px;
+  .arrow {
+    &__wrap {
+
+    }
+
+    &__img {
+      position: absolute;
+      bottom: 68px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 44px;
+    }
   }
 
-  &__contacts-wrapper {
+  .contacts {
     position: absolute;
-    right: 0;
+    height: fit-content;
+    width: 450px;
     bottom: 35px;
-  }
+    right: 65px;
+    padding-left: 15px;
 
-  &__contacts {
-    width: 100%;
-    margin-right: 65px;
-  }
+    .social {
+      &__ul {
+        margin-left: 0;
+        padding-left: 0;
+        list-style-type: none;
+      }
 
-  &__contacts-ul {
-    margin-left: 0;
-    padding-left: 0;
-  }
+      &__li {
 
-  &__contacts-li {
-    list-style-type: none;
-  }
+      }
 
-  &__social-link {
+      &__link {
 
-  }
+      }
 
-  &__social-img {
-    height: 40px;
-    transition: all 0.3s;
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
+      &__img {
+        height: 40px;
+        transition: all 0.3s;
 
-  &__phone {
-    font-family: "Myriad Pro Regular", sans-serif;
-    width: fit-content;
-    font-size: 24px;
-    color: @white;
-    margin-bottom: 0;
-    &:hover {
-      cursor: pointer;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
     }
 
-    &::before {
-      content: '';
-      display: inline-block;
-      margin-bottom: -8px;
-      margin-right: 5px;
-      width: 22px;
-      height: 32px;
-      background-size: contain;
-      background: url("../img/cont call.svg") no-repeat center;
-    }
-  }
+    &__text {
+      width: fit-content;
+      font-size: 24px;
+      color: @white;
+      margin-bottom: 0;
 
-  &__mail {
-    font-family: "Myriad Pro Regular", sans-serif;
-    text-align: right;
-    width: fit-content;
-    font-size: 24px;
-    color: @white;
-    margin-bottom: 0;
-    &:hover {
-      cursor: pointer;
-    }
+      &:hover {
+        cursor: pointer;
+      }
 
-    &::before {
-      content: '';
-      display: inline-block;
-      margin-bottom: -8px;
-      margin-right: 5px;
-      width: 32px;
-      height: 32px;
-      background-size: contain;
-      background: url("../img/cont email.svg") no-repeat center;
+      &::before {
+        content: '';
+        display: inline-block;
+        margin-right: 5px;
+        width: 32px;
+        height: 32px;
+
+      }
+
+      &_phone {
+        &::before {
+          margin-bottom: -8px;
+          background: url("../img/cont call.svg") no-repeat center;
+          background-size: contain;
+          width: 22px;
+          height: 32px;
+        }
+      }
+
+      &_mail {
+        &::before {
+          margin-bottom: -4px;
+          background: url("../img/cont email.svg") no-repeat center;
+          background-size: contain;
+          width: 32px;
+          height: 22px;
+        }
+      }
     }
   }
 }
