@@ -1,47 +1,58 @@
 $(document).ready(function () {
     setTimeout(function () {
         $('body').css('opacity', '1');
-        $('#ticker2').css('transform', 'translateX(900px)');
 
-    }, 1000);
+    }, 1500);
 
     function ticker() {
         setTimeout(function () {
-            $('#ticker1').css({'opacity': '0', 'transform': 'translateX(-900px)'});
-            $('#ticker2').css({'opacity': '1', 'transform': 'translateX(0)'});
-            $('#ticker3').css('transform', 'translateX(900px)');
+            $('#ticker1').removeClass('ticker__text_curr').addClass('ticker__text_prev');
+            $('#ticker2').removeClass('ticker__text_next').addClass('ticker__text_curr');
+            $('#ticker3').removeClass('ticker__text_prev').addClass('ticker__text_next');
         }, 3500);
         setTimeout(function () {
-            $('#ticker2').css({'opacity': '0', 'transform': 'translateX(-900px)'});
-            $('#ticker3').css({'opacity': '1', 'transform': 'translateX(0)'});
-            $('#ticker1').css('transform', 'translateX(900px)');
+            $('#ticker2').removeClass('ticker__text_curr').addClass('ticker__text_prev');
+            $('#ticker3').removeClass('ticker__text_next').addClass('ticker__text_curr');
+            $('#ticker1').removeClass('ticker__text_prev').addClass('ticker__text_next');
         }, 6500);
         setTimeout(function () {
-            $('#ticker3').css({'opacity': '0', 'transform': 'translateX(-900px)'});
-            $('#ticker1').css({'opacity': '1', 'transform': 'translateX(0)'});
-            $('#ticker2').css('transform', 'translateX(900px)');
+            $('#ticker3').removeClass('ticker__text_curr').addClass('ticker__text_prev');
+            $('#ticker1').removeClass('ticker__text_next').addClass('ticker__text_curr');
+            $('#ticker2').removeClass('ticker__text_prev').addClass('ticker__text_next');
         }, 9500);
+    }
+
+    function copy(element) {
+        $(element).on('click', function () {
+            let $tmp = $("<textarea>");
+            $("body").append($tmp);
+            $tmp.val($(element).text()).select();
+            document.execCommand("copy");
+            $tmp.remove();
+            alert('Номер добавлен в буффер обмена');
+        });
+    }
+
+    function movearrow() {
+        setTimeout(function () {
+            $('#arrow').addClass('arrow__img_moved');
+        }, 7500);
+        setTimeout(function () {
+            $('#arrow').removeClass('arrow__img_moved');
+        }, 8000);
     }
 
     ticker();
     setInterval(function () {
         ticker();
-    }, 9000)
+    }, 9000);
 
-    $('.main-window__phone').on('click', function () {
-        let $tmp = $("<textarea>");
-        $("body").append($tmp);
-        $tmp.val($('.main-window__phone').text()).select();
-        document.execCommand("copy");
-        $tmp.remove();
-        alert('Номер добавлен в буффер обмена');
-    });
-    $('.main-window__mail').on('click', function () {
-        let $tmp = $("<textarea>");
-        $("body").append($tmp);
-        $tmp.val($('.main-window__mail').text()).select();
-        document.execCommand("copy");
-        $tmp.remove();
-        alert('E-mail добавлен в буффер обмена');
-    });
+    copy('.contacts__text_phone');
+    copy('.contacts__text_mail');
+
+    movearrow();
+    setInterval(function () {
+        movearrow();
+    }, 6000);
+
 });

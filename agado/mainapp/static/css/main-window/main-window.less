@@ -40,18 +40,24 @@
       color: @white;
       font-size: 40px;
       transition: all 0.7s;
-      opacity: 0;
+      user-select: none;
 
-      &_first {
+      &_curr {
         opacity: 1;
+        transform: translateX(0);
+      }
+      &_next {
+        opacity: 0;
+        transform: translateX(900px);
+      }
+      &_prev {
+        opacity: 0;
+        transform: translateX(-900px);
       }
     }
   }
 
   .arrow {
-    &__wrap {
-
-    }
 
     &__img {
       position: absolute;
@@ -60,6 +66,11 @@
       right: 0;
       margin: auto;
       height: 44px;
+      transition: all 0.5s;
+      transform: translateY(0);
+      &_moved {
+        transform: translateY(30px);
+      }
     }
   }
 

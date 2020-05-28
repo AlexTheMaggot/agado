@@ -77,10 +77,19 @@
   color: #FFFFFF;
   font-size: 40px;
   transition: all 0.7s;
-  opacity: 0;
+  user-select: none;
 }
-.mainwindow .ticker__text_first {
+.mainwindow .ticker__text_curr {
   opacity: 1;
+  transform: translateX(0);
+}
+.mainwindow .ticker__text_next {
+  opacity: 0;
+  transform: translateX(900px);
+}
+.mainwindow .ticker__text_prev {
+  opacity: 0;
+  transform: translateX(-900px);
 }
 .mainwindow .arrow__img {
   position: absolute;
@@ -89,6 +98,11 @@
   right: 0;
   margin: auto;
   height: 44px;
+  transition: all 0.5s;
+  transform: translateY(0);
+}
+.mainwindow .arrow__img_moved {
+  transform: translateY(30px);
 }
 .mainwindow .contacts {
   position: absolute;

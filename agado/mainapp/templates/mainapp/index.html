@@ -11,12 +11,12 @@
         <div class="row mainwindow">
             <h1 class="title">СТУДИЯ ДИЗАЙНА</h1>
             <div class="col-12 ticker__wrap">
-                <p class="ticker__text ticker__text_first text-center" id="ticker1" data-ticker="#ticker2">Мы делаем
+                <p class="ticker__text ticker__text_curr text-center" id="ticker1" data-ticker="#ticker2">Мы делаем
                     маркетинг доступным для вас</p>
-                <p class="ticker__text text-center" id="ticker2" data-ticker="#ticker3">Мы делаем вкусный дизайн</p>
-                <p class="ticker__text text-center" id="ticker3" data-ticker="#ticker1">Мы делаем продающие макеты</p>
+                <p class="ticker__text ticker__text_next text-center" id="ticker2" data-ticker="#ticker3">Мы делаем вкусный дизайн</p>
+                <p class="ticker__text ticker__text_prev text-center" id="ticker3" data-ticker="#ticker1">Мы делаем продающие макеты</p>
             </div>
-            <img src="{% static 'img/arrow.svg' %}" alt="" class="arrow__img">
+            <img src="{% static 'img/arrow.svg' %}" alt="" class="arrow__img" id="arrow">
             <div class="contacts">
                 <ul class="social__ul centered-elements">
                     <li class="social__li centered-elements__element">
