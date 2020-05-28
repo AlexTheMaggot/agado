@@ -94,7 +94,7 @@
   position: absolute;
   height: fit-content;
   width: 448px;
-  bottom: 35px;
+  bottom: 34px;
   right: 65px;
   padding-left: 15px;
 }
@@ -129,7 +129,7 @@
   height: 32px;
 }
 .mainwindow .contacts__text_phone::before {
-  margin-bottom: -10px;
+  margin-bottom: -9px;
   background: url("../img/cont call.svg") no-repeat center;
   background-size: contain;
   width: 22px;
