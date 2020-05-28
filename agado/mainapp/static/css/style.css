@@ -35,6 +35,9 @@
 .header .menu__link:hover {
   text-decoration: none;
 }
+.header .menu__text {
+  padding-bottom: 2px;
+}
 .mainwindow {
   height: 100vh;
   background: url("../img/bg.jpg") center;
@@ -58,7 +61,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  margin: 100px auto auto auto;
+  margin: 110px auto auto auto;
   height: 100vh;
   overflow-x: hidden;
 }
@@ -90,7 +93,7 @@
 .mainwindow .contacts {
   position: absolute;
   height: fit-content;
-  width: 450px;
+  width: 448px;
   bottom: 35px;
   right: 65px;
   padding-left: 15px;
@@ -99,6 +102,7 @@
   margin-left: 0;
   padding-left: 0;
   list-style-type: none;
+  margin-bottom: 20px;
 }
 .mainwindow .contacts .social__img {
   height: 40px;
@@ -115,16 +119,17 @@
 }
 .mainwindow .contacts__text:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 .mainwindow .contacts__text::before {
   content: '';
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 10px;
   width: 32px;
   height: 32px;
 }
 .mainwindow .contacts__text_phone::before {
-  margin-bottom: -8px;
+  margin-bottom: -10px;
   background: url("../img/cont call.svg") no-repeat center;
   background-size: contain;
   width: 22px;
