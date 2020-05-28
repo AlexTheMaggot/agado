@@ -1,25 +1,25 @@
 $(document).ready(function () {
     setTimeout(function () {
         $('body').css('opacity', '1');
-        $('#ticker2').css('transform', 'translateX(970px)');
+        $('#ticker2').css('transform', 'translateX(900px)');
 
-    }, 500);
+    }, 1000);
 
     function ticker() {
         setTimeout(function () {
-            $('#ticker1').css({'opacity': '0', 'transform': 'translateX(-970px)'});
+            $('#ticker1').css({'opacity': '0', 'transform': 'translateX(-900px)'});
             $('#ticker2').css({'opacity': '1', 'transform': 'translateX(0)'});
-            $('#ticker3').css('transform', 'translateX(970px)');
+            $('#ticker3').css('transform', 'translateX(900px)');
         }, 3500);
         setTimeout(function () {
-            $('#ticker2').css({'opacity': '0', 'transform': 'translateX(-970px)'});
+            $('#ticker2').css({'opacity': '0', 'transform': 'translateX(-900px)'});
             $('#ticker3').css({'opacity': '1', 'transform': 'translateX(0)'});
-            $('#ticker1').css('transform', 'translateX(970px)');
+            $('#ticker1').css('transform', 'translateX(900px)');
         }, 6500);
         setTimeout(function () {
-            $('#ticker3').css({'opacity': '0', 'transform': 'translateX(-970px)'});
+            $('#ticker3').css({'opacity': '0', 'transform': 'translateX(-900px)'});
             $('#ticker1').css({'opacity': '1', 'transform': 'translateX(0)'});
-            $('#ticker2').css('transform', 'translateX(970px)');
+            $('#ticker2').css('transform', 'translateX(900px)');
         }, 9500);
     }
 
