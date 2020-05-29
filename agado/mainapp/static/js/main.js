@@ -58,17 +58,15 @@ $(document).ready(function () {
         $('html').animate({scrollTop: destination}, 1000);
     });
     setInterval(function () {
-        setTimeout(function () {
             $('.st_main').addClass('st_main_animated');
             $('.st_1').addClass('st_1_animated');
             $('.st_2').addClass('st_2_animated');
             $('.st_3').addClass('st_3_animated');
-        }, 2860);
         setTimeout(function () {
             $('.st_main').removeClass('st_main_animated');
             $('.st_1').removeClass('st_1_animated');
             $('.st_2').removeClass('st_2_animated');
             $('.st_3').removeClass('st_3_animated');
-        }, 3860);
-    }, 3860);
+        }, 1000);
+    }, 3000);
 });
