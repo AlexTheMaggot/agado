@@ -57,4 +57,12 @@ $(document).ready(function () {
         const destination = $(elementClick).offset().top;
         $('html').animate({scrollTop: destination}, 1000);
     });
+    setInterval(function () {
+        setTimeout(function () {
+            $('.st_main').addClass('st_main_animated');
+        }, 2860);
+        setTimeout(function () {
+            $('.st_main').removeClass('st_main_animated');
+        }, 3860);
+    }, 3860);
 });
