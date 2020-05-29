@@ -33,15 +33,6 @@ $(document).ready(function () {
         });
     }
 
-    function movearrow() {
-        setTimeout(function () {
-            $('#arrow').addClass('arrow__img_moved');
-        }, 7500);
-        setTimeout(function () {
-            $('#arrow').removeClass('arrow__img_moved');
-        }, 8000);
-    }
-
     ticker();
     setInterval(function () {
         ticker();
@@ -49,11 +40,6 @@ $(document).ready(function () {
 
     copy('.contacts__text_phone', '.contacts__text_hidden', 'Номер добавлен в буффер обмена');
     copy('.contacts__text_mail', '.contacts__text_mail', 'E-mail добавлен в буффер обмена');
-
-    movearrow();
-    setInterval(function () {
-        movearrow();
-    }, 6000);
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 700) {

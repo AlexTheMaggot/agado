@@ -1,0 +1,27 @@
+.st_main, .st_1, .st_2, .st_3 {
+                            fill: none;
+                            stroke: #000000;
+                            stroke-width: 5.6693;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-miterlimit: 10;
+                        }
+                        .st_main {
+                            transform: translateY(-40px);
+                            animation-name: main;
+                            animation-duration: 1s;
+                            animation-timing-function: ease-in-out;
+                            animation-iteration-count: infinite;
+                        }
+
+                        @keyframes main {
+                            from {
+                                transform: translateY(-112px);
+                            }
+                            50% {
+                                transform: translateY(0);
+                            }
+                            to {
+                                transform: translateY(-112px);
+                            }
+                        }
