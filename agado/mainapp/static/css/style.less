@@ -1,9 +1,9 @@
 @import 'bootstrap.css';
 @import "font-face";
 @import "colors";
-
 @import "header/header";
 @import "main-window/main-window";
+@import "second-window/second-window";
 
 p, h1, h2, h3, h4, h5, h6 {
   font-family: "Myriad Pro Regular", sans-serif;
@@ -16,6 +16,18 @@ p, h1, h2, h3, h4, h5, h6 {
 .body {
   opacity: 0;
   transition: all 0.5s;
+
+  &::-webkit-scrollbar-track {
+    background: @gray-dark;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #333333;
+  }
 }
 
 .centered-elements {

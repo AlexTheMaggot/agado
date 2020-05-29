@@ -13,10 +13,14 @@
             <div class="col-12 ticker__wrap">
                 <p class="ticker__text ticker__text_curr text-center" id="ticker1" data-ticker="#ticker2">Мы делаем
                     маркетинг доступным для вас</p>
-                <p class="ticker__text ticker__text_next text-center" id="ticker2" data-ticker="#ticker3">Мы делаем вкусный дизайн</p>
-                <p class="ticker__text ticker__text_prev text-center" id="ticker3" data-ticker="#ticker1">Мы делаем продающие макеты</p>
+                <p class="ticker__text ticker__text_next text-center" id="ticker2" data-ticker="#ticker3">Мы делаем
+                    вкусный дизайн</p>
+                <p class="ticker__text ticker__text_prev text-center" id="ticker3" data-ticker="#ticker1">Мы делаем
+                    продающие макеты</p>
             </div>
-            <img src="{% static 'img/arrow.svg' %}" alt="" class="arrow__img" id="arrow">
+            <a href="#second-window">
+                <img src="{% static 'img/arrow.svg' %}" alt="" class="arrow__img" id="arrow">
+            </a>
             <div class="contacts">
                 <ul class="social__ul centered-elements">
                     <li class="social__li centered-elements__element">
@@ -57,9 +61,26 @@
                 </ul>
                 <div class="centered-elements">
                     <p class="contacts__text contacts__text_phone centered-elements__element">+375 29 721 50 60</p>
+                    <p class="contacts__text_hidden">+375297215060</p>
                     <p class="contacts__text contacts__text_mail centered-elements__element">info@agado.by</p>
                 </div>
             </div>
+        </div>
+        <div class="row second-window" id="second-window">
+            <div class="col-3 design-3d">
+                <p class="design-3d__title">3D ДИЗАЙН</p>
+                <p class="design-3d__text">Разрабатываем трёхмерные модели любой сложности и класса. Над моделями
+                    работают квалифицированные профессионалы со стажем работы в сфере 3D дизайна, ювелирного дела,
+                    литья, ЧПУ более 6 лет. Разработка ведётся по любому чертежу, эскизу, техническому заданию или
+                    просто по вашим пожеланиям. Вы получаете на выходе любой переносимый формат 3D графики: STL,
+                    3DS, OBJ, MAX, 3DM, DXF, FBX.</p>
+                <img src="{% static 'img/mesh.png' %}" alt="" class="design-3d__mesh design-3d__mesh_hidden">
+                <img src="{% static 'img/cube.png' %}" alt="" class="design-3d__cube design-3d__cube_hidden">
+            </div>
+            <div class="col-9 what-we-make">
+                <div class="what-we-make__blur col-1"></div>
+            </div>
+
         </div>
     </div>
 </main>

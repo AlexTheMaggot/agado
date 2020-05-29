@@ -13,6 +13,7 @@
 }
 .header {
   position: fixed;
+  z-index: 1;
 }
 .header__wrapper {
   padding: 50px 65px 0 65px;
@@ -92,7 +93,7 @@
   transform: translateX(-900px);
 }
 .mainwindow .arrow__img {
-  position: absolute;
+  position: fixed;
   bottom: 68px;
   left: 0;
   right: 0;
@@ -156,6 +157,77 @@
   width: 32px;
   height: 22px;
 }
+.mainwindow .contacts__text_hidden {
+  display: none;
+}
+.second-window .design-3d {
+  background: #1A1A1A;
+  padding: 50px 15px 35px 65px;
+  min-height: 800px;
+  flex: 0 0 27%;
+  max-width: 27%;
+}
+.second-window .design-3d__title {
+  position: absolute;
+  top: 50px;
+  left: 65px;
+  line-height: 55px;
+  color: #FFFFFF;
+  font-family: "Myriad Pro Light";
+  font-size: 66px;
+}
+.second-window .design-3d__text {
+  padding-right: 15px;
+  line-height: 25px;
+  position: absolute;
+  top: 132px;
+  left: 65px;
+  color: #FFFFFF;
+  font-family: "Myriad Pro Light";
+  font-size: 20px;
+}
+.second-window .design-3d__cube {
+  position: absolute;
+  top: 436px;
+  left: 182px;
+  height: 178px;
+  transition: all 0.5s;
+  opacity: 1;
+  transform: translateY(0);
+}
+.second-window .design-3d__cube_hidden {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+.second-window .design-3d__mesh {
+  position: absolute;
+  top: 508px;
+  left: 56px;
+  height: 225px;
+  transition: all 0.5s;
+  opacity: 1;
+}
+.second-window .design-3d__mesh_hidden {
+  opacity: 0;
+}
+.second-window .what-we-make {
+  background-size: cover;
+  background: url('../img/mazda rx8_final_alpha rend_6_1_copyright_postwork.jpg') no-repeat left;
+  padding: 50px 15px 35px 65px;
+  min-height: 800px;
+  flex: 0 0 73%;
+  max-width: 73%;
+}
+.second-window .what-we-make__blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 31.51%;
+  flex: 0 0 31.51%;
+  min-height: 800px;
+  opacity: 0.7;
+  background: #1A1A1A;
+}
 p,
 h1,
 h2,
@@ -171,6 +243,15 @@ h6 {
 .body {
   opacity: 0;
   transition: all 0.5s;
+}
+.body::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+.body::-webkit-scrollbar {
+  width: 4px;
+}
+.body::-webkit-scrollbar-thumb {
+  background: #333333;
 }
 .centered-elements {
   display: -webkit-box;

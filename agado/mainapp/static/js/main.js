@@ -22,14 +22,14 @@ $(document).ready(function () {
         }, 9500);
     }
 
-    function copy(element) {
-        $(element).on('click', function () {
+    function copy(click, text, message) {
+        $(click).on('click', function () {
             let $tmp = $("<textarea>");
             $("body").append($tmp);
-            $tmp.val($(element).text()).select();
+            $tmp.val($(text).text()).select();
             document.execCommand("copy");
             $tmp.remove();
-            alert('Номер добавлен в буффер обмена');
+            alert(message);
         });
     }
 
@@ -47,12 +47,28 @@ $(document).ready(function () {
         ticker();
     }, 9000);
 
-    copy('.contacts__text_phone');
-    copy('.contacts__text_mail');
+    copy('.contacts__text_phone', '.contacts__text_hidden', 'Номер добавлен в буффер обмена');
+    copy('.contacts__text_mail', '.contacts__text_mail', 'E-mail добавлен в буффер обмена');
 
     movearrow();
     setInterval(function () {
         movearrow();
     }, 6000);
 
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 700) {
+            setTimeout(function () {
+                $('.design-3d__mesh_hidden').removeClass('design-3d__mesh_hidden');
+            }, 300);
+            setTimeout(function () {
+                $('.design-3d__cube_hidden').removeClass('design-3d__cube_hidden');
+            }, 800);
+        }
+    });
+    $('a[href^="#"]').click(function (e) {
+        e.preventDefault();
+        const elementClick = $(this).attr("href");
+        const destination = $(elementClick).offset().top;
+        $('html').animate({scrollTop: destination}, 1000);
+    });
 });

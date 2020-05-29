@@ -1,0 +1,76 @@
+.second-window {
+  .design-3d {
+    background: @gray-dark;
+    padding: 50px 15px 35px 65px;
+    min-height: 800px;
+    flex: 0 0 27%;
+    max-width: 27%;
+
+    &__title {
+      position: absolute;
+      top: 50px;
+      left: 65px;
+      line-height: 55px;
+      color: @white;
+      font-family: "Myriad Pro Light";
+      font-size: 66px;
+    }
+
+    &__text {
+      padding-right: 15px;
+      line-height: 25px;
+      position: absolute;
+      top: 132px;
+      left: 65px;
+      color: @white;
+      font-family: "Myriad Pro Light";
+      font-size: 20px;
+    }
+
+    &__cube {
+      position: absolute;
+      top: 436px;
+      left: 182px;
+      height: 178px;
+      transition: all 0.5s;
+      opacity: 1;
+      transform: translateY(0);
+      &_hidden {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+    }
+
+    &__mesh {
+      position: absolute;
+      top: 508px;
+      left: 56px;
+      height: 225px;
+      transition: all 0.5s;
+      opacity: 1;
+      &_hidden {
+        opacity: 0;
+      }
+    }
+  }
+
+  .what-we-make {
+    background-size: cover;
+    background: url('../img/mazda rx8_final_alpha rend_6_1_copyright_postwork.jpg') no-repeat left;
+    padding: 50px 15px 35px 65px;
+    min-height: 800px;
+    flex: 0 0 73%;
+    max-width: 73%;
+
+    &__blur {
+      position: absolute;
+      top: 0;
+      left: 0;
+      max-width: 31.51%;
+      flex: 0 0 31.51%;
+      min-height: 800px;
+      opacity: 0.7;
+      background: @gray-dark;
+    }
+  }
+}
