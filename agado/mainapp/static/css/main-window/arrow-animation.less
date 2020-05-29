@@ -10,11 +10,35 @@
 .st_main {
   transform: translateY(-68px);
 }
+.st_1, .st_2, .st_3 {
+  opacity: 0;
+}
 
 .st_main_animated {
   animation-name: main;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.st_1_animated {
+  animation-name: st1;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.st_2_animated {
+  animation-name: st2;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.st_3_animated {
+  animation-name: st3;
+  animation-duration: 1s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
@@ -27,5 +51,68 @@
   }
   to {
     transform: translateY(-68px);
+  }
+}
+
+@keyframes st1 {
+  from {
+    opacity: 0;
+  }
+  13% {
+    opacity: 0;
+  }
+  26% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  53% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes st2 {
+  from {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0.5;
+  }
+  56% {
+    opacity: 0.5;
+  }
+  69% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes st3 {
+  from {
+    opacity: 0;
+  }
+  46% {
+    opacity: 0;
+  }
+  59% {
+    opacity: 0.5;
+  }
+  69% {
+    opacity: 0.5;
+  }
+  76% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
   }
 }
