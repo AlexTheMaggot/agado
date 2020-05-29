@@ -68,5 +68,5 @@ $(document).ready(function () {
             $('.st_2').removeClass('st_2_animated');
             $('.st_3').removeClass('st_3_animated');
         }, 1000);
-    }, 3000);
+    }, 3200);
 });
