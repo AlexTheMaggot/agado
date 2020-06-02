@@ -326,8 +326,19 @@
   flex: 0 0 73%;
   max-width: 73%;
 }
+.second-window .what-we-make__text {
+  position: absolute;
+  bottom: 32px;
+  right: 65px;
+  line-height: 20px;
+  margin-bottom: 0;
+  font-family: "Myriad Pro Light";
+  color: #FFFFFF;
+  font-size: 24px;
+}
 .second-window .what-we-make__blur {
   position: absolute;
+  padding: 50px 15px 35px 15px;
   top: 0;
   left: 0;
   max-width: 31.51%;
@@ -335,6 +346,38 @@
   min-height: 800px;
   background: #1A1A1AB3;
   backdrop-filter: blur(10px);
+}
+.second-window .what-we-make__title {
+  font-family: "Myriad Pro Light", sans-serif;
+  font-size: 40px;
+  color: #FFFFFF;
+  line-height: 29px;
+  margin-bottom: 31px;
+}
+.second-window .what-we-make .service {
+  margin-bottom: 40px;
+}
+.second-window .what-we-make .service_last {
+  margin-bottom: 0;
+}
+.second-window .what-we-make .service__img {
+  height: 66px;
+  float: left;
+  margin-top: 7px;
+}
+.second-window .what-we-make .service__title {
+  font-size: 24px;
+  line-height: 17px;
+  color: #FFFFFF;
+  padding-left: 87px;
+}
+.second-window .what-we-make .service__text {
+  font-family: "Myriad Pro Light";
+  font-size: 14px;
+  color: #CCCCCC;
+  line-height: 15px;
+  padding-left: 87px;
+  margin-bottom: 0;
 }
 p,
 h1,
