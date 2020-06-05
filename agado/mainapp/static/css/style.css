@@ -6,7 +6,7 @@
   src: url("../fonts/MyriadPro-Regular.woff2") format('woff2'), url("../fonts/MyriadPro-Regular.woff") format('woff'), url("../fonts/MyriadPro-Regular.ttf") format('ttf'), url("../fonts/MyriadPro-Regular.eot") format('eot');
 }
 @font-face {
-  font-family: 'Myriad Pro Regular';
+  font-family: 'Myriad Pro Light';
   font-style: normal;
   font-weight: 300;
   src: url("../fonts/MyriadPro-Light.woff2") format('woff2'), url("../fonts/MyriadPro-Light.woff") format('woff'), url("../fonts/MyriadPro-Light.ttf") format('ttf'), url("../fonts/MyriadPro-Light.eot") format('eot');
@@ -277,7 +277,7 @@
 }
 .second-window .design-3d__title {
   position: absolute;
-  top: 50px;
+  top: 48px;
   left: 65px;
   line-height: 55px;
   color: #FFFFFF;
@@ -288,7 +288,7 @@
   padding-right: 15px;
   line-height: 25px;
   position: absolute;
-  top: 132px;
+  top: 137px;
   left: 65px;
   color: #FFFFFF;
   font-family: "Myriad Pro Light", sans-serif;
@@ -321,7 +321,6 @@
 .second-window .what-we-make {
   background: url('../img/mazda rx8_final_alpha rend_6_1_copyright_postwork.jpg') no-repeat center;
   background-size: cover;
-  padding: 50px 15px 35px 65px;
   min-height: 800px;
   flex: 0 0 73%;
   max-width: 73%;
@@ -338,7 +337,7 @@
 }
 .second-window .what-we-make__blur {
   position: absolute;
-  padding: 50px 15px 35px 15px;
+  padding: 51px 15px 35px 13px;
   top: 0;
   left: 0;
   max-width: 31.51%;
