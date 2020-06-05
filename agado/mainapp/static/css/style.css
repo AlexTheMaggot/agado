@@ -337,7 +337,8 @@
 }
 .second-window .what-we-make__blur {
   position: absolute;
-  padding: 51px 15px 35px 13px;
+  padding: 51px 15px 0 13px;
+  height: 800px;
   top: 0;
   left: 0;
   max-width: 31.51%;
