@@ -272,8 +272,8 @@
   background: #1A1A1A;
   padding: 50px 15px 35px 65px;
   min-height: 800px;
-  flex: 0 0 27%;
-  max-width: 27%;
+  flex: 0 0 26.69%;
+  max-width: 26.69%;
 }
 .second-window .design-3d__title {
   position: absolute;
@@ -322,8 +322,8 @@
   background: url('../img/mazda rx8_final_alpha rend_6_1_copyright_postwork.jpg') no-repeat center;
   background-size: cover;
   min-height: 800px;
-  flex: 0 0 73%;
-  max-width: 73%;
+  flex: 0 0 73.31%;
+  max-width: 73.31%;
 }
 .second-window .what-we-make__text {
   position: absolute;
@@ -341,8 +341,8 @@
   height: 800px;
   top: 0;
   left: 0;
-  max-width: 31.51%;
-  flex: 0 0 31.51%;
+  max-width: 31.83%;
+  flex: 0 0 31.83%;
   min-height: 800px;
   background: #1A1A1AB3;
   backdrop-filter: blur(10px);
@@ -367,16 +367,16 @@
 }
 .second-window .what-we-make .service__title {
   font-size: 24px;
-  line-height: 17px;
+  line-height: 16px;
   color: #FFFFFF;
-  padding-left: 87px;
+  padding-left: 90px;
 }
 .second-window .what-we-make .service__text {
-  font-family: "Myriad Pro Light";
+  font-family: "Myriad Pro Light", sans-serif;
   font-size: 14px;
   color: #CCCCCC;
   line-height: 15px;
-  padding-left: 87px;
+  padding-left: 90px;
   margin-bottom: 0;
 }
 p,
