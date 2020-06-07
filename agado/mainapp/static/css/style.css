@@ -363,7 +363,7 @@
 .second-window .what-we-make .service__img {
   height: 66px;
   float: left;
-  margin-top: 7px;
+  margin: 8px 0 0 1px;
 }
 .second-window .what-we-make .service__title {
   font-size: 24px;
