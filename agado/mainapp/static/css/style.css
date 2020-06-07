@@ -337,7 +337,7 @@
 }
 .second-window .what-we-make__blur {
   position: absolute;
-  padding: 51px 15px 0 8px;
+  padding: 50px 15px 0 14px;
   height: 800px;
   top: 0;
   left: 0;
@@ -351,7 +351,7 @@
   font-family: "Myriad Pro Light", sans-serif;
   font-size: 40px;
   color: #FFFFFF;
-  line-height: 29px;
+  line-height: 31px;
   margin-bottom: 31px;
 }
 .second-window .what-we-make .service {
