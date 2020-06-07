@@ -363,13 +363,14 @@
 .second-window .what-we-make .service__img {
   height: 66px;
   float: left;
-  margin: 8px 0 0 1px;
+  margin: 7px 0 0 1px;
 }
 .second-window .what-we-make .service__title {
   font-size: 24px;
   line-height: 16px;
   color: #FFFFFF;
   padding-left: 90px;
+  margin-bottom: 15px;
 }
 .second-window .what-we-make .service__text {
   font-family: "Myriad Pro Light", sans-serif;
