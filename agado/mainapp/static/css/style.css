@@ -449,7 +449,7 @@
   line-height: 18px;
 }
 .third-window .graph-design-list__text {
-  margin-left: 88px;
+  margin: 0 0 69px 88px;
   font-family: "Myriad Pro Light", sans-serif;
   font-size: 16px;
   line-height: 19.2px;
