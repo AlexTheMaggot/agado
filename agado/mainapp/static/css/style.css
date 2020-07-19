@@ -380,6 +380,78 @@
   padding-left: 90px;
   margin-bottom: 0;
 }
+.third-window {
+  height: 800px;
+}
+.third-window .owl__dots {
+  height: 363px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+.third-window .owl__img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 626px;
+  margin: auto;
+}
+.third-window .owl__pen {
+  height: 234px;
+  position: absolute;
+  top: 501px;
+  left: 48px;
+}
+.third-window .graph-design__dots {
+  position: absolute;
+  top: 21px;
+  right: 162px;
+  height: 85px;
+}
+.third-window .graph-design__border {
+  position: absolute;
+  top: 55px;
+  right: 177px;
+  height: 85px;
+}
+.third-window .graph-design__text {
+  font-family: "Myriad Pro Light", sans-serif;
+  font-size: 66px;
+  position: absolute;
+  top: 40px;
+  right: 195px;
+  line-height: 72px;
+}
+.third-window .graph-design-list {
+  margin-top: 200px;
+}
+.third-window .graph-design-list__item_left {
+  flex: 0 0 46.67%;
+  max-width: 46.67%;
+  padding: 0 15px 0 0;
+}
+.third-window .graph-design-list__item_right {
+  flex: 0 0 53.33%;
+  max-width: 53.33%;
+  padding: 0 65px 0 15px;
+}
+.third-window .graph-design-list__img {
+  height: 72px;
+  float: left;
+}
+.third-window .graph-design-list__title {
+  margin-left: 88px;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+}
+.third-window .graph-design-list__text {
+  margin-left: 88px;
+  font-family: "Myriad Pro Light", sans-serif;
+  font-size: 16px;
+}
 p,
 h1,
 h2,
