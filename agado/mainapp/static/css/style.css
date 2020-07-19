@@ -391,9 +391,9 @@
 }
 .third-window .owl__img {
   position: absolute;
-  left: 16px;
+  left: 32px;
   right: 0;
-  top: 10px;
+  top: 20px;
   bottom: 0;
   height: 626px;
   margin: auto;
