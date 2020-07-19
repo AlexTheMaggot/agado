@@ -443,7 +443,7 @@
   float: left;
 }
 .third-window .graph-design-list__title {
-  margin-left: 88px;
+  margin: 0 0 7px 88px;
   font-family: "Myriad Pro", sans-serif;
   font-size: 24px;
   line-height: 18px;
