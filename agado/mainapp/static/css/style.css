@@ -420,9 +420,10 @@
   font-family: "Myriad Pro Light", sans-serif;
   font-size: 66px;
   position: absolute;
-  top: 40px;
-  right: 195px;
+  top: 39px;
+  right: 191px;
   line-height: 72px;
+  color: #000000;
 }
 .third-window .graph-design-list {
   margin-top: 200px;
