@@ -456,6 +456,64 @@
   line-height: 19.2px;
   color: #4D4D4D;
 }
+.fourth-window {
+  background-color: #F2F2F2;
+  height: 800px;
+}
+.fourth-window .motion__bg {
+  width: 444px;
+  height: 111px;
+  background-color: #DBFF69;
+  position: absolute;
+  top: 18px;
+  left: 105px;
+  z-index: 1;
+}
+.fourth-window .motion__title {
+  font-family: "Myriad Pro Light", sans-serif;
+  font-size: 66px;
+  color: #000000;
+  position: absolute;
+  top: 50px;
+  left: 65px;
+  line-height: 72px;
+  z-index: 2;
+}
+.fourth-window .motion-list__wrapper {
+  margin: 176px 0 0 50px;
+}
+.fourth-window .motion-list__img {
+  height: 56px;
+  float: left;
+}
+.fourth-window .motion-list__title {
+  margin-left: 82px;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+.fourth-window .motion-list__text {
+  margin-left: 82px;
+  font-family: "Myriad Pro Light", sans-serif;
+  font-size: 16px;
+  color: #4D4D4D;
+}
+.fourth-window .we-prepare__title {
+  font-family: "Myriad Pro Light", sans-serif;
+  font-size: 24px;
+  color: #000000;
+  margin-left: 65px;
+}
+.fourth-window .we-prepare__item {
+  font-family: "Myriad Pro Light", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  margin-left: 65px;
+}
+.fourth-window .fishes__wrapper {
+  padding: 0;
+}
 p,
 h1,
 h2,
