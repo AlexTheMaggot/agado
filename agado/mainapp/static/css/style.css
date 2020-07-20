@@ -447,12 +447,14 @@
   font-family: "Myriad Pro", sans-serif;
   font-size: 24px;
   line-height: 18px;
+  color: #000000;
 }
 .third-window .graph-design-list__text {
   margin: 0 0 69px 88px;
   font-family: "Myriad Pro Light", sans-serif;
   font-size: 16px;
   line-height: 19.2px;
+  color: #4D4D4D;
 }
 p,
 h1,
