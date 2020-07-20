@@ -3,12 +3,12 @@
 {% block title %}AGADO - Главная{% endblock %}
 
 {% block content %}
-<header>
+<!--<header>
     {% include 'header.html' %}
-</header>
+</header>-->
 <main>
     <div class="container-fluid">
-        <div class="row mainwindow">
+        <!--<div class="row mainwindow">
             <h1 class="title">СТУДИЯ ДИЗАЙНА</h1>
             <div class="col-12 ticker__wrap">
                 <p class="ticker__text ticker__text_curr text-center" id="ticker1" data-ticker="#ticker2">Мы делаем
@@ -182,7 +182,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <div class="row fourth-window">
             <div class="col-6">
                 <div class="motion__bg"></div>
@@ -211,7 +211,7 @@
                 <p class="we-prepare__item">4. Графический видеоролик. Это яркое, захватывающее, эффектное зрелище. Главной задачей является: ответить на часто задаваемые вопросы. Данный ролик должен раскрыть суть и ответить на сложные вопросы максимально понятным и простым «языком».</p>
             </div>
             <div class="col-6 fishes__wrapper">
-                <video width="960" height="800" poster="video/duel.jpg" autoplay="autoplay" loop="loop" muted="muted" class="fishes">
+                <video poster="video/duel.jpg" autoplay="autoplay" loop="loop" muted="muted" class="fishes">
                     <source src="{% static 'mov/fish.mp4' %}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                     <source src="{% static 'mov/fish.webm' %}" type='video/webm; codecs="vp9, vorbis"'>
                 </video>

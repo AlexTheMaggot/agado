@@ -511,6 +511,10 @@
   color: #000000;
   margin-left: 65px;
 }
+.fourth-window .fishes {
+  width: 100%;
+  height: auto;
+}
 .fourth-window .fishes__wrapper {
   padding: 0;
 }
