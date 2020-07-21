@@ -545,6 +545,7 @@
 }
 .footer .ft-higher__img {
   height: 100px;
+  margin-bottom: 7px;
 }
 .footer .ft-higher__text {
   font-family: "Myriad Pro Light", sans-serif;
