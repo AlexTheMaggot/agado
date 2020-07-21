@@ -460,6 +460,9 @@
   background-color: #F2F2F2;
   height: 800px;
 }
+.fourth-window .motion__wrapper {
+  padding-right: 0;
+}
 .fourth-window .motion__bg {
   width: 444px;
   height: 111px;
