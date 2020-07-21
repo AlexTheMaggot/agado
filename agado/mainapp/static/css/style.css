@@ -558,13 +558,29 @@
   width: 100%;
   position: absolute;
 }
-.footer .lower-bg__small {
+.footer .lower-bg__first {
   background-color: #1A1A1A;
-  border-radius: 44px 44px 0 0;
+  border-radius: 0 44px 0 0;
+  flex: 0 0 18.42%;
+  max-width: 18.42%;
 }
-.footer .lower-bg__large {
+.footer .lower-bg__second {
   background-color: #1A1A1A;
   border-radius: 44px 44px 0 0;
+  flex: 0 0 31.58%;
+  max-width: 31.58%;
+}
+.footer .lower-bg__third {
+  background-color: #1A1A1A;
+  border-radius: 44px 44px 0 0;
+  flex: 0 0 31.58%;
+  max-width: 31.58%;
+}
+.footer .lower-bg__fourth {
+  background-color: #1A1A1A;
+  border-radius: 44px 0 0 0;
+  flex: 0 0 18.42%;
+  max-width: 18.42%;
 }
 p,
 h1,
