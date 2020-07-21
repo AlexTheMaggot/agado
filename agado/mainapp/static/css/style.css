@@ -552,6 +552,20 @@
   font-size: 40px;
   color: #FFFFFF;
 }
+.footer .ft-lower {
+  height: 680px;
+  top: 280px;
+  width: 100%;
+  position: absolute;
+}
+.footer .lower-bg__small {
+  background-color: #1A1A1A;
+  border-radius: 44px 44px 0 0;
+}
+.footer .lower-bg__large {
+  background-color: #1A1A1A;
+  border-radius: 44px 44px 0 0;
+}
 p,
 h1,
 h2,
