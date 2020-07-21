@@ -462,6 +462,7 @@
 }
 .fourth-window .motion__wrapper {
   padding-right: 0;
+  height: 800px;
 }
 .fourth-window .motion__bg {
   width: 444px;
@@ -522,6 +523,34 @@
 }
 .fourth-window .fishes__wrapper {
   padding: 0;
+}
+.footer {
+  height: 960px;
+  background: #333333;
+}
+.footer .ft-higher {
+  padding: 0 51px;
+}
+.footer .ft-higher__title {
+  font-family: "Myriad Pro Light", sans-serif;
+  font-size: 40px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 31px;
+  margin: 50px 0 28px 0;
+  text-transform: uppercase;
+}
+.footer .ft-higher__item {
+  padding: 0 63px;
+  text-align: center;
+}
+.footer .ft-higher__img {
+  height: 100px;
+}
+.footer .ft-higher__text {
+  font-family: "Myriad Pro Light", sans-serif;
+  font-size: 40px;
+  color: #FFFFFF;
 }
 p,
 h1,
