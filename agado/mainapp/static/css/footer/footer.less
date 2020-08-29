@@ -1,5 +1,6 @@
+/*
 .footer {
-  height: 960px;
+  height: 100vh;
   background: @gray;
   .ft-higher {
     padding: 0 51px;
@@ -30,7 +31,7 @@
   }
 
   .ft-lower {
-    height: 680px;
+    height: revert;
     top: 280px;
     width: 100%;
     position: absolute;
@@ -59,6 +60,89 @@
       border-radius: 44px 0 0 0;
       flex: 0 0 18.42%;
       max-width: 18.42%;
+    }
+  }
+}*/
+
+.footer {
+  height: 100vh;
+  background-color: @gray;
+  display: flex;
+  flex-direction: column;
+
+  &__upper {
+    flex: 0 0 280px;
+  }
+
+  &__lower {
+    flex: auto;
+  }
+}
+
+.ft-upper {
+  &__title {
+    font-family: "Myriad Pro Light", sans-serif;
+    font-size: 40px;
+    color: @white;
+    text-align: center;
+    margin: 35px 0 10px 0;
+    text-transform: uppercase;
+  }
+}
+
+.ft-callback {
+  flex: 1;
+  text-align: center;
+  &_center {
+    flex: 0.7;
+  }
+
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__img {
+    height: 100px;
+    margin-bottom: 7px;
+  }
+
+  &__text {
+    font-family: "Myriad Pro Light", sans-serif;
+    font-size: 40px;
+    color: @white;
+  }
+}
+
+.ft-lower {
+  &__bg-wrapper {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 280px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &__bg-item {
+    background-color: @gray-dark;
+    height: 100%;
+    &_first {
+      flex: 0 0 18.42%;
+      border-radius: 0 44px 0 0;
+    }
+    &_second {
+      flex: 0 0 31.58%;
+      border-radius: 44px 44px 0 0;
+    }
+    &_third {
+      flex: 0 0 31.58%;
+      border-radius: 44px 44px 0 0;
+    }
+    &_fourth {
+      flex: 0 0 18.42%;
+      border-radius: 44px 0 0 0;
     }
   }
 }

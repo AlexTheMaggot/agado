@@ -524,14 +524,84 @@
 .fourth-window .fishes__wrapper {
   padding: 0;
 }
+/*
 .footer {
-  height: 960px;
-  background: #333333;
+  height: 100vh;
+  background: @gray;
+  .ft-higher {
+    padding: 0 51px;
+    &__title {
+      font-family: "Myriad Pro Light", sans-serif;
+      font-size: 40px;
+      color: @white;
+      text-align: center;
+      margin: 35px 0 10px 0;
+      text-transform: uppercase;
+    }
+
+    &__item {
+      padding: 0 63px;
+      text-align: center;
+    }
+
+    &__img {
+      height: 100px;
+      margin-bottom: 7px;
+    }
+
+    &__text {
+      font-family: "Myriad Pro Light", sans-serif;
+      font-size: 40px;
+      color: @white;
+    }
+  }
+
+  .ft-lower {
+    height: revert;
+    top: 280px;
+    width: 100%;
+    position: absolute;
+  }
+  .lower-bg {
+    &__first {
+      background-color: @gray-dark;
+      border-radius: 0 44px 0 0;
+      flex: 0 0 18.42%;
+      max-width: 18.42%;
+    }
+    &__second {
+      background-color: @gray-dark;
+      border-radius: 44px 44px 0 0;
+      flex: 0 0 31.58%;
+      max-width: 31.58%;
+    }
+    &__third {
+      background-color: @gray-dark;
+      border-radius: 44px 44px 0 0;
+      flex: 0 0 31.58%;
+      max-width: 31.58%;
+    }
+    &__fourth {
+      background-color: @gray-dark;
+      border-radius: 44px 0 0 0;
+      flex: 0 0 18.42%;
+      max-width: 18.42%;
+    }
+  }
+}*/
+.footer {
+  height: 100vh;
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
 }
-.footer .ft-higher {
-  padding: 0 51px;
+.footer__upper {
+  flex: 0 0 280px;
 }
-.footer .ft-higher__title {
+.footer__lower {
+  flex: auto;
+}
+.ft-upper__title {
   font-family: "Myriad Pro Light", sans-serif;
   font-size: 40px;
   color: #FFFFFF;
@@ -539,48 +609,54 @@
   margin: 35px 0 10px 0;
   text-transform: uppercase;
 }
-.footer .ft-higher__item {
-  padding: 0 63px;
+.ft-callback {
+  flex: 1;
   text-align: center;
 }
-.footer .ft-higher__img {
+.ft-callback_center {
+  flex: 0.7;
+}
+.ft-callback__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.ft-callback__img {
   height: 100px;
   margin-bottom: 7px;
 }
-.footer .ft-higher__text {
+.ft-callback__text {
   font-family: "Myriad Pro Light", sans-serif;
   font-size: 40px;
   color: #FFFFFF;
 }
-.footer .ft-lower {
-  height: 680px;
-  top: 280px;
-  width: 100%;
+.ft-lower__bg-wrapper {
+  display: flex;
+  flex-direction: row;
   position: absolute;
+  top: 280px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-.footer .lower-bg__first {
+.ft-lower__bg-item {
   background-color: #1A1A1A;
+  height: 100%;
+}
+.ft-lower__bg-item_first {
+  flex: 0 0 18.42%;
   border-radius: 0 44px 0 0;
+}
+.ft-lower__bg-item_second {
+  flex: 0 0 31.58%;
+  border-radius: 44px 44px 0 0;
+}
+.ft-lower__bg-item_third {
+  flex: 0 0 31.58%;
+  border-radius: 44px 44px 0 0;
+}
+.ft-lower__bg-item_fourth {
   flex: 0 0 18.42%;
-  max-width: 18.42%;
-}
-.footer .lower-bg__second {
-  background-color: #1A1A1A;
-  border-radius: 44px 44px 0 0;
-  flex: 0 0 31.58%;
-  max-width: 31.58%;
-}
-.footer .lower-bg__third {
-  background-color: #1A1A1A;
-  border-radius: 44px 44px 0 0;
-  flex: 0 0 31.58%;
-  max-width: 31.58%;
-}
-.footer .lower-bg__fourth {
-  background-color: #1A1A1A;
   border-radius: 44px 0 0 0;
-  flex: 0 0 18.42%;
-  max-width: 18.42%;
 }
 p,
 h1,

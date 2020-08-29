@@ -1,5 +1,5 @@
 {% load static %}
-<div class="container-fluid footer">
+<!--<div class="container-fluid footer">
     <div class="row ft-higher">
         <div class="col-12">
             <pre class="ft-higher__title">У вас остались вопросы?  Свяжитесь с нами:</pre>
@@ -22,5 +22,33 @@
             <div class="col-3 lower-bg__second"></div>
             <div class="col-3 lower-bg__third"></div>
             <div class="col-3 lower-bg__fourth"></div>
+    </div>
+</div>-->
+
+<div class="footer">
+    <div class="footer__upper ft-upper">
+        <pre class="ft-upper__title">У вас остались вопросы?  Свяжитесь с нами:</pre>
+        <div class="ft-callback__wrapper">
+            <div class="ft-callback">
+                <img src="{% static 'img/fbcall.svg' %}" alt="" class="ft-callback__img">
+                <p class="ft-callback__text">Контакты</p>
+            </div>
+            <div class="ft-callback ft-callback_center">
+                <img src="{% static 'img/fbmail.svg' %}" alt="" class="ft-callback__img">
+                <p class="ft-callback__text">Обратная связь</p>
+            </div>
+            <div class="ft-callback">
+                <img src="{% static 'img/fbnet.svg' %}" alt="" class="ft-callback__img">
+                <p class="ft-callback__text">Мы в соцсетях</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer__lower ft-lower">
+        <div class="ft-lower__bg-wrapper">
+            <div class="ft-lower__bg-item ft-lower__bg-item_first"></div>
+            <div class="ft-lower__bg-item ft-lower__bg-item_second"></div>
+            <div class="ft-lower__bg-item ft-lower__bg-item_third"></div>
+            <div class="ft-lower__bg-item ft-lower__bg-item_fourth"></div>
+        </div>
     </div>
 </div>
